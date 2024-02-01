@@ -26,7 +26,7 @@ def upload_video(project_folder_path):
     video_category_id =  "24"
     video_path = project_folder_path + "\\final_video.mp4"
 
-    print("Please enter the following details for your video:")
+    print("\nPlease enter the following details for your video:")
     insertedValues = {}
     fields = ["Title", "Description", "Privacy Status"]
     valid_privacy_statuses = ["public", "private", "unlisted"]
@@ -62,15 +62,15 @@ def main():
     
     input("Press Enter to start...")
 
-    project_folder_path = input("Enter the full path to the project folder: ").replace('"', '').strip()
+    project_folder_path = input("\nPEnter the \033[1mfull path to the project folder\033[0m 📁: ").replace('"', '').strip()
 
     create_images(project_folder_path)
 
-    input("\nPictures created successfully!\nPlease check the result and press Enter when you are ready.\nRemember, you need to add background music and captions.")
+    input("\nPictures created successfully!✅\nPlease check the result and press Enter when you are ready.\nRemember❗️you need to \033[1madd background music and captions.\033[0m\n")
 
     create_video(project_folder_path)
 
-    input("\nVideo created successfully!\nPlease check the result and press Enter when you are ready.")
+    input("\nVideo created successfully!✅\nPlease check the result and press Enter when you are ready.")
 
     upload_video(project_folder_path)
 
