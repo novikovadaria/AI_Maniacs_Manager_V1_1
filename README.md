@@ -1,5 +1,13 @@
-## Инструкция:
+# Инструкция:
 
+## Перед использованием:
+Добавьте в папку файлы settings.json и client_secret.json.
+
+**settings.json со структурой:** `{ "API_KEY": "ВАМ API KEY ДЛЯ OPENAI (спросите GPT)"}`
+
+**client_secret.json Нужно скачать в личном кабинете google:** *https://console.cloud.google.com/apis/credentials*
+
+## Как использвать:
 1. Создайте папку проекта и положите туда файл prompts.xlsx с запросами для AI 
 2. Запускаете программу  
 3. Вводите запрашиваемые данные
